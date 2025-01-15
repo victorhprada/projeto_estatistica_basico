@@ -6,7 +6,7 @@ Este projeto analisa os preços normais e os descontos aplicados em diferentes c
 
 ## 1️⃣ Boxplot: Preço Normal para Categoria com Maior Desvio Padrão
 
-<img src="imagens/Boxplot_categoria_lacteos.png" alt="Boxplot Categoria Lacteos" width="600"/>
+<img src="imagens/Boxplot_categoria_lacteos.png" alt="Boxplot Categoria Lacteos"/>
 
 ### O que este gráfico nos mostra?
 
@@ -20,7 +20,7 @@ Este projeto analisa os preços normais e os descontos aplicados em diferentes c
 
 ## 2️⃣ Gráfico de Barras: Distribuição de Descontos por Categoria
 
-<img src="imagens/Barras_desconto_categoria.png" alt="Gráfico de Barras de Descontos" width="600"/>
+<img src="imagens/Barras_desconto_categoria.png" alt="Gráfico de Barras de Descontos"/>
 
 ### O que este gráfico nos mostra?
 
