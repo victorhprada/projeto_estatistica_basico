@@ -36,7 +36,9 @@ plt.figure(figsize=(12, 6))
 plt.boxplot(lacteos, label=['Lacteos'])
 plt.title('Boxplot do preco_normal para a categoria lacteos', fontsize=16)
 plt.ylabel('Preço Normal')
+plt.savefig('imagens/Boxplot_categoria_lacteos.png')
 plt.show()
+
 
 # Gráfico de barras para apresentar o desconto por categoria
 plt.figure(figsize=(12, 6))
@@ -47,7 +49,10 @@ plt.xlabel('Categoria')
 plt.ylabel('Desconto')
 plt.xticks(rotation=45)
 plt.grid(True, linestyle='--', alpha=0.7)
+plt.savefig('imagens/Barras_desconto_categoria.png')
 plt.show()
+
+
 
 # Gráfico de mapa interativo agrupando os dados por categoria, marca, e trazendo a média de desconto
 desconto_categoria_marca = df.groupby(['Categoria', 'Marca'])['Desconto'].mean().reset_index() # Agrupando os dados do DataFrame por categoria, marca e calculando a média de desconto para cada categoria e marca
@@ -60,3 +65,8 @@ fig = px.treemap(desconto_categoria_marca,
                  color='Marca'
                  )
 fig.show()
+
+fig.write_image('imagens/Treemap_Desconto.png', engine="kaleido")
+
+
+
